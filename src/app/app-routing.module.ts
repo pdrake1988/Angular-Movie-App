@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {AppComponent} from "./app.component";
+import {MoviesPageComponent} from "./movies-page/movies-page.component";
 
 const routes: Routes = [
-  {path: ' ', pathMatch: 'full', component: AppComponent}
+  {path: ' ', pathMatch: 'full', redirectTo: '/:genreId/:monetization/:sortBy/:page'},
+  {path: '/:genreId/:monetization/:sortBy/:page', pathMatch: 'full', component: MoviesPageComponent}
 ];
 
 @NgModule({
