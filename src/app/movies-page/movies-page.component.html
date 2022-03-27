@@ -1,7 +1,9 @@
 <main>
   <div *ngFor="let movie of movies?.results">
-    <img class="img-lg" src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="{{movie.title}}">
+    <img class="img-lg" src="https://image.tmdb.org/t/p/w342{{movie.poster_path}}" alt="{{movie.title}}">
     <img class="img-md" src="https://image.tmdb.org/t/p/w185{{movie.poster_path}}" alt="{{movie.title}}">
-    <h3>{{movie.title}}</h3>
+    <img class="img-sm" src="https://image.tmdb.org/t/p/w154{{movie.poster_path}}" alt="{{movie.title}}">
+    <img class="img-xs" src="https://image.tmdb.org/t/p/w92{{movie.poster_path}}" alt="{{movie.title}}">
+    <h3 style="text-align: center">{{movie.title}}</h3>
   </div>
 </main>

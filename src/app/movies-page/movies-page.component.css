@@ -3,3 +3,52 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
 }
+@media (min-width: 320px) {
+  main div {
+    max-width: 92px;
+    margin: auto;
+    padding: 3px;
+  }
+  .img-xs {
+    display: inline;
+  }
+  .img-sm, .img-md, .img-lg {
+    display: none;
+  }
+}
+@media (min-width: 481px) {
+  main div {
+    max-width: 154px;
+    padding: 5px;
+  }
+  .img-sm {
+    display: inline;
+  }
+  .img-lg, .img-md, .img-xs {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  main div {
+    max-width: 190px;
+    padding: 5px;
+  }
+  .img-md {
+    display: inline;
+  }
+  .img-lg, .img-sm, .img-xs {
+    display: none;
+  }
+@media (min-width: 1025px) {
+  main div {
+    max-width: 400px;
+    padding: 5px;
+  }
+  .img-lg {
+    display: inline;
+  }
+  .img-md, .img-sm, .img-xs {
+    display: none;
+  }
+}
+}
