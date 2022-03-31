@@ -1,0 +1,14 @@
+header {
+  display: flex;
+  flex-direction: row;
+}
+button {
+  margin: auto;
+}
+h1 {
+  text-align: center;
+  margin: auto;
+}
+a {
+  margin: auto;
+}
