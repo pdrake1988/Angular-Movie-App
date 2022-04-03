@@ -1,0 +1,18 @@
+#overlay {
+  display: flex;
+  flex-direction: column;
+  background-color: slategray;
+  justify-items: start;
+  width: 400px;
+  height: 100%;
+}
+#header {
+  margin: 100px;
+  text-align: center;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+  text-align: center;
+}

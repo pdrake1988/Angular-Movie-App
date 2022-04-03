@@ -9,13 +9,17 @@ import { HeaderComponent } from './movies-page/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
-import { OffcanvasComponent } from './movies-page/header/offcanvas/offcanvas.component';
+import { OffcanvasComponent } from './movies-page/offcanvas/offcanvas.component';
+import { HomeComponent } from './home/home.component';
+import {OverlayModule} from "@angular/cdk/overlay";
+
 @NgModule({
   declarations: [
     AppComponent,
     MoviesPageComponent,
     HeaderComponent,
-    OffcanvasComponent
+    OffcanvasComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +28,7 @@ import { OffcanvasComponent } from './movies-page/header/offcanvas/offcanvas.com
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
+    OverlayModule
   ],
   providers: [],
   bootstrap: [AppComponent]

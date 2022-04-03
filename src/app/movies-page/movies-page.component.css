@@ -1,5 +1,6 @@
 main {
   display: flex;
+  background-color: gray;
   flex-direction: row;
   flex-wrap: wrap;
 }

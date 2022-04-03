@@ -1,5 +1,6 @@
 header {
   display: flex;
+  background-color: gray;
   flex-direction: row;
 }
 button {

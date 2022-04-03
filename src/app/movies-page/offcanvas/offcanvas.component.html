@@ -1,0 +1,17 @@
+<div class="cdk-overlay-container">
+  <div id="overlay" class="cdk-overlay-pane">
+    <div id="header">
+      <h2>Filter</h2>
+    </div>
+     <div class="menu">
+       <button mat-raised-button color="primary">
+         Filter by Genre <mat-icon>arrow_right</mat-icon>
+       </button>
+       <ul>
+         <li *ngFor="let genre of movieGenres?.genres">
+           <a [routerLink]="['/getMovies', genre.id]">{{genre.name}}</a>
+         </li>
+       </ul>
+     </div>
+  </div>
+</div>

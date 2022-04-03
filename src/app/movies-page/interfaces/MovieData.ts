@@ -1,4 +1,4 @@
-import {Results} from "./results";
+import {Results} from "./Results";
 
 export interface MovieData {
   page: number;

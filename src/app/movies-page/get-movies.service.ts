@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {MovieData} from "./interfaces/movie-data";
+import {MovieData} from "./interfaces/MovieData";
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +9,7 @@ export class GetMoviesService {
 
   constructor(private httpClient: HttpClient) { }
 
-  moviesData(monetization: string, sortBy: string, page: string, genreId: string) {
+  moviesData(genreId: string, monetization: string, sortBy: string, page: string) {
     if (genreId === 'default') {
       return this.httpClient.get<MovieData>('https://api.themoviedb.org/3/discover/movie', {
         params: {
