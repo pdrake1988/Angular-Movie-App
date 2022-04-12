@@ -1,0 +1,19 @@
+header {
+  text-align: center;
+  background-color: gray;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  height: 100%;
+}
+h1 {
+  text-align: center;
+  align-content: start;
+}
+a {
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+}

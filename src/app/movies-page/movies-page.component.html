@@ -1,5 +1,7 @@
-<app-header (openMenu)="openMenu()"></app-header>
+<app-header (open)="showOffcanvas = !showOffcanvas"></app-header>
 <main>
+  <app-offcanvas *ngIf="showOffcanvas" [genreId]="genreId" [monetization]="monetization"
+                 [sortBy]="sortBy" [page]="page"></app-offcanvas>
   <div *ngFor="let movie of movies?.results">
     <img class="img-lg" src="https://image.tmdb.org/t/p/w342{{movie.poster_path}}" alt="{{movie.title}}">
     <img class="img-md" src="https://image.tmdb.org/t/p/w185{{movie.poster_path}}" alt="{{movie.title}}">
